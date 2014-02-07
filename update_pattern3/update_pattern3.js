@@ -13,9 +13,9 @@ function update(data){
 	var text = svg.selectAll("text").data(data, function(d){return d;});
 	//the return value of the binding the data is the update then u can call enter and exit on that update
 	text.attr("class","update")
-	.transition()
-      .duration(500)
-      .attr("x", function(d, i) { return i * 32; });
+	 .transition()
+     .duration(500)
+     .attr("x", function(d, i) { return i * 32; });
 	
 	//ENTER
 	text.enter().append("text") 
